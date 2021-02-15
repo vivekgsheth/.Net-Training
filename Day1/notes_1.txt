@@ -1,0 +1,56 @@
+------------ Asp.Net Core --------------
+- Open Source
+- Cloud optimized web framework
+- Can be developed & run Win, Linux & Mac
+- Includes MVC framework = (MVC + Web API)
+- Asp.net core apps can run on .Net Core & full .Net Framework
+- Built-in support of DI
+
+--------------- DI ------------------
+- Loose coupling
+
+----------- Limitation --------------
+-> .NET framework can only run on windows 
+
+--------------- MVC -----------------
+
+
+
+----- async/await ---------
+
+-whenever we use "await" , Main thread will create a new Worker thread & main thread will continue execution of next lines(after method).
+-async is going to make sure that the code will start with MAIN thread & will completed by WORKER thread.
+-If we have another await then execution remains same & that will be executed by worker thread itself as it cannot create a new thread,
+ only main thread can create new threads & OS create main thread.
+-await cannot be alone without async.
+-async can be alone(but no point because whole code will be executed by main thread)
+
+
+----------- .Net Core Web App ------------
+- Allowing you to ADD services -> ConfigureServices()
+- Allowing you to USE those services -> Configure()
+
+-------- Middlewares: methods starting with "Use..." -------
+- Middlewares are executed in order so if they are interdependent then it won't work.
+- UseStaticFiles(): (js, css, html) files are stored inside "wwwroot" folder so it will look at the path &  serve the content.
+- UseDefaultFiles(): Automatically sets index or home or default.html files will be rendered on path : "/"
+
+
+--> Currently MVC 6 is used for .Net core
+
+------------ Controller -> View :
+-- ViewData: Key-val pair
+-- ViewBag(dynamic): will not throw compile or runtime err if we misspell.
+
+------------ Model -> Controller -> View :
+
+In View: 
+-- @Model.prop_nm (dynamic)
+-- @model proj.models.model_nm (compile) (strongly typed)
+-- ViewModel is used to pass multiple classes from controller to view
+
+
+----> Difference between .Net Framework & .Net Core:
+1> web.config  vs appsettings
+2> MVC5  vs MVC6
+3> 
