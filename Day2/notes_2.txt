@@ -1,0 +1,39 @@
+-DI is mandatory in .net core
+
+DI = class -> constructor -> interface 
+
+
+------ Service Lifetimes ----------
+-Transient: percall - each time they're requested creates a new instance(stateless).
+-Scoped: persession - once per request. (EG: Bank transaction)
+-Singleton(default): created when first time they're requested & then will use same instance in consequent requests.(EG: Youtube video count)
+
+@ViewStart: defines master page
+@ViewImports: imports in all cshtml files
+
+---------- TagHelper ----------
+- attributes given by .net core
+
+
+Architecture -> MVC,Microservice
+Design patterns c# 30+ -> solution to common problems (code)
+
+---------- Repository pattern -----------
+-Adds abstract layer between controller & model
+-Reusable code
+-Used when we are converting into MICROSERVICE architecture
+-Updates in abstract layer can be reflected to all controllers wherever it is used
+
+
+
+
+------------ Middlewares -----------------
+--Every middleware requires next() to invoke next middleware in pipeline
+-app.Use..
+-app.Run(): Terminating middleware - Next middlewares in pipeline wont be called
+-app.Map(route,static method): Maps the middleware according to route
+
+
+
+
+

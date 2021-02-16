@@ -50,7 +50,21 @@ In View:
 -- ViewModel is used to pass multiple classes from controller to view
 
 
-----> Difference between .Net Framework & .Net Core:
-1> web.config  vs appsettings
-2> MVC5  vs MVC6
-3> 
+----> Difference between 
+.Net Framework  				.Net Core:
+1> web.config  			vs		 appsettings
+2> MVC5  			vs		 MVC6
+3> Platform dependent-Windows	vs		 Platform independent
+4> Not Cloud optimized 		vs		 Cloud optimized
+5> C# methods			vs 		 TagHelpers
+6> WebForms support(HeavyWeight)vs		 No support of WebForms(LightWeight)
+7> Project structure
+web.config,			vs		 appsettings.json,
+global.asax,					 Configure(), ConfigureServices()
+.asmx, .aspx					 HTML, (MVC + API)
+			
+
+-------> How cloud optimized:
+-Divided app into small parts
+-Dependency injection is compulsory
+-Code is more reusable
