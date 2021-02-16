@@ -34,6 +34,10 @@
                             <td>@p.Length</td>
                             <td>@p.Category</td>
                             <td>@p.Format</td>
+                            <td>
+                                <a asp-controller="Home" asp-action="Edit" asp-route-id="@p.Id">Edit</a> |
+                                <a asp-controller="Home" asp-action="Delete" asp-route-id="@p.Id">Delete</a>
+                            </td>
                         </tr>
                     }
                 </tbody>

@@ -148,3 +148,5 @@ E:\.NET_Training\Day2\VideoManagement\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeA
 E:\.NET_Training\Day2\VideoManagement\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\.NET_Training\Day2\VideoManagement\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\.NET_Training\Day2\VideoManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
+E:\.NET_Training\Day2\VideoManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
+E:\.NET_Training\Day2\VideoManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs

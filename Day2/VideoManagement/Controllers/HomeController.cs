@@ -50,6 +50,59 @@ namespace VideoManagement.Controllers
             return View();
         }
 
+        [HttpGet("edit/{id}")]
+        public IActionResult Edit(int? id)
+        {
+            Video video = _db.Videos.FirstOrDefault(x => x.Id == id);
+            return View(video);
+        }
+
+        [HttpPost("edit/{id}")]
+        public IActionResult Edit(int id, Video model)
+        {
+            if (ModelState.IsValid)
+            {
+                Video v = _db.Videos.FirstOrDefault(x => x.Id == model.Id);
+                if (v == default(Video))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    v.Category = model.Category;
+                    v.Format = model.Format;
+                    v.Title = model.Title;
+                    v.Length = model.Length;
+                    _db.SaveChanges();
+                }
+               
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        [HttpGet("delete/{id}")]
+        public IActionResult Delete(int? id)
+        {
+            Video video = _db.Videos.FirstOrDefault(x => x.Id == id);
+            return View(video);
+        }
+
+        [HttpPost("delete/{id}")]
+        public IActionResult Delete(int? id, Video v)
+        {
+            if (v != null)
+            {
+                _db.Remove(v);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
