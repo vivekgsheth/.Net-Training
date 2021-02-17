@@ -1,0 +1,19 @@
+-> If we keep a prop as Id in model class it will directly assume it as PK.
+-> If we are using diff name then we have add [Key] annotation to it.
+-------- Content Negotiation -----------
+Content negotiation is the mechanism that is used for serving different representations of a resource at the same URI, so that the user agent can specify which is best suited for the user
+
+
+----- MicroService Architecture -------
+-You create different APIs for diff tables : We can manage the diff APIs using API Gateway
+
+-------- Web API -------
+
+
+----- SOLID principles --------
+S: Single Responsibility : A class should have one and only one reason to change, meaning that a class should have only one job.
+O: Open Closed
+L: Liskov Substitution
+I: Interface segregation
+D: Dependency Inversion
+

@@ -1,0 +1,28 @@
+
+<h1>## All Students ##</h1>
+
+<p *ngIf="!allStudents"><em>Loading...</em></p>
+
+
+<table class='table table-striped' *ngIf="allStudents">
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Class</th>
+      <th>SchoolName</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of allStudents">
+      <td>{{ student.sid }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.class }}</td>
+      <td>{{ student.schoolName }}</td>
+      <td>{{ student.city }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -34,6 +34,12 @@ Design patterns c# 30+ -> solution to common problems (code)
 -app.Map(route,static method): Maps the middleware according to route
 
 
-
-
+---------- CodeFirst ---------
+1. Table schema
+2. DB context(EF core)
+3. Register service using AddDBContext in startup file
+4. ctor with opt in DataContext
+5. Specify conn string in appsettings.json
+6. Add-Migration in cli
+7. Update-Database in cli
 
