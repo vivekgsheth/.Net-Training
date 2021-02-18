@@ -1,0 +1,37 @@
+----- CORS ------
+-Cross Origin Resource Sharing
+-If we enable this then we can get data from more than one domains.
+
+
+-------- Architecture -------
+Model		-	Student
+DAL		-	StudentDataContext
+Repo		-	StudentService(studentDataContext)
+Controller	-	StudentController(studentService)
+
+
+------- Unit Testing --------
+-AAA principle
+--Arrange: Prepare everything for test
+--Act: Method that we want to test is executed 
+--Assert: Compare the actual result with expected result
+
+-XUnit 
+--Advisable to use Mocking(create dummy data to test methods)
+--
+
+
+---------- Microservices --------
+--
+
+
+
+------ Docker -----
+-image: code + dependencies(OS, nuget packgs, Framework)
+-containter: instance of image
+
+-------- API Gateway ------------
+--Middleman between real APIs & Client
+--For client it will behave as an API
+--
+

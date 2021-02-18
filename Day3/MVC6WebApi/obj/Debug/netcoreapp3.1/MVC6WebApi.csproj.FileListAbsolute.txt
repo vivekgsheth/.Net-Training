@@ -182,3 +182,4 @@ E:\.NET_Training\Day3\MVC6WebApi\bin\Debug\netcoreapp3.1\runtimes\win-arm\native
 E:\.NET_Training\Day3\MVC6WebApi\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 E:\.NET_Training\Day3\MVC6WebApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 E:\.NET_Training\Day3\MVC6WebApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+E:\.NET_Training\Day3\MVC6WebApi\obj\Debug\netcoreapp3.1\MVC6WebApi.csprojAssemblyReference.cache

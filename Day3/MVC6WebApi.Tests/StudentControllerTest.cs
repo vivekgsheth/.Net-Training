@@ -19,6 +19,7 @@ namespace MVC6WebApi.Tests
         }
 
 
+        // Fact: To identify a method as a test method
         [Fact]
         public void Get_WhenCalled_ReturnsOkresult()
         {
