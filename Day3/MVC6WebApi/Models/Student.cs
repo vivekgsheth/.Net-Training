@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC6WebApi.CustomValidation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace MVC6WebApi.Models
         [Key]
         public int Sid { get; set; }
 
+        [Required(ErrorMessage = "Please enter name")]
         public string Name { get; set; }
 
         public string Email { get; set; }
@@ -20,5 +22,16 @@ namespace MVC6WebApi.Models
         public string SchoolName { get; set; }
 
         public string City { get; set; }
+
+        [Required(ErrorMessage = "Please choose admission date")]
+        [Display(Name = "Admission Date")]
+        [DataType(DataType.Date)]
+        [CustomAdmDate(ErrorMessage = "Adm date cannot be greater than today's date")]
+        public DateTime AdmissionDate { get; set; }
+
+        [Display(Name = "Date Of Birth")]
+        [DataType(DataType.Date)]
+        [Min18Years]
+        public DateTime DOB { get; set; }
     }
 }

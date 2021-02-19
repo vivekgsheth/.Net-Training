@@ -14,6 +14,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.AzureAD.UI;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace MVC6WebApi
 {
@@ -29,9 +33,13 @@ namespace MVC6WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("DefaultConnection")));
+
+            // Azure AD
+            services.AddAuthentication(AzureADDefaults.AuthenticationScheme)
+                .AddAzureAD(options => Configuration.Bind("AzureAd", options));
 
             services.AddDbContext<StudentDataContext>(options =>
                 options.UseSqlServer(
@@ -40,14 +48,23 @@ namespace MVC6WebApi
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddControllersWithViews(config => 
+            // bind policy for authorization
+            services.AddControllersWithViews(options =>
             {
-                config.RespectBrowserAcceptHeader = true;   // Content-Negotiation : Whatever user wants he can specify           
-                config.OutputFormatters.Add(new XmlSerializerOutputFormatter()); // adding xml ouput formatter
-            }).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
+                var policy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser()
+                .Build();
+                options.Filters.Add(new AuthorizeFilter(policy));
+            });
+
+            //services.AddControllersWithViews(config =>
+            //{
+            //    config.RespectBrowserAcceptHeader = true;   // Content-Negotiation : Whatever user wants he can specify           
+            //    config.OutputFormatters.Add(new XmlSerializerOutputFormatter()); // adding xml ouput formatter
+            //}).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
 
             // Cross Origin Resource Sharing
-            services.AddCors(p => 
+            services.AddCors(p =>
             {
                 p.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });

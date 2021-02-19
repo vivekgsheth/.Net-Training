@@ -4,14 +4,16 @@ using MVC6WebApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MVC6WebApi.Migrations
 {
     [DbContext(typeof(StudentDataContext))]
-    partial class StudentDataContextModelSnapshot : ModelSnapshot
+    [Migration("20210219081805_studentdt")]
+    partial class studentdt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

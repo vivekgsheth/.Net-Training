@@ -1,0 +1,31 @@
+------- API Gateway ----------
+-Paid service given by aws,google,azure
+
+
+
+---- oauth(Open authentication) ------
+Identity providers: Google , FB, Gmail
+-They provide client id & client secret to us & then we can use it to authenticate users.
+-Organizations can also have there own identity servers.
+
+
+Ravi@marutimakwanahotmail.onmicrosoft.com
+Muto3888
+https://localhost:44327/signin-oidc
+tenant id -27760807-6452-425e-af9b-694ff4071aae
+app id - ac1c4159-dbbf-40ca-94d1-7fedae0e21d8
+
+jainik@marutimakwanahotmail.onmicrosoft.com
+Maruti@1234
+https://localhost:44391/signin-oidc
+tenant id -27760807-6452-425e-af9b-694ff4071aae
+app id - 872e6266-c944-4e3c-a32a-86991699c050
+
+
+"AzureAd": {
+    "Instance": "https://login.microsoftonline.com/",
+    "Domain": "marutimakwanahotmail.onmicrosoft.com",
+    "TenantId": "27760807-6452-425e-af9b-694ff4071aae",
+    "ClientId": "",
+    "CallbackPath": "/signin-oidc"
+  }

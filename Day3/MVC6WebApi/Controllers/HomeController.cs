@@ -23,6 +23,22 @@ namespace MVC6WebApi.Controllers
             return View();
         }
 
+        public ActionResult New()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult New(Student student)
+        {
+            if (ModelState.IsValid)
+            {
+                RedirectToAction("Index");
+            }
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

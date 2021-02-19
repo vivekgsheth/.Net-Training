@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "YuDSGirOU72J3ip7A/j8/R3Mxw5QokR2DORRr36gVko2RQzurXz5TAj5CWZLvTzjRJYs4gfoUABPvGp2NvJrIA==",
+  "dgSpecHash": "9uTrsqUaAgVMciQOS8ZOK3GL3FpEC+ygQ08vmptuNm9oGe10dNCQuabGIGqyulX3kwZAYPSMzcH2oQbCXALRdA==",
   "success": true,
   "projectFilePath": "E:\\.NET_Training\\Day3\\MVC6WebApi.Tests\\MVC6WebApi.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vshethadmin\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\vshethadmin\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\vshethadmin\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
+    "C:\\Users\\vshethadmin\\.nuget\\packages\\microsoft.aspnetcore.authentication.azuread.ui\\3.1.10\\microsoft.aspnetcore.authentication.azuread.ui.3.1.10.nupkg.sha512",
+    "C:\\Users\\vshethadmin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.10\\microsoft.aspnetcore.authentication.jwtbearer.3.1.10.nupkg.sha512",
+    "C:\\Users\\vshethadmin\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.10\\microsoft.aspnetcore.authentication.openidconnect.3.1.10.nupkg.sha512",
     "C:\\Users\\vshethadmin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.12\\microsoft.aspnetcore.cryptography.internal.3.1.12.nupkg.sha512",
     "C:\\Users\\vshethadmin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.12\\microsoft.aspnetcore.cryptography.keyderivation.3.1.12.nupkg.sha512",
     "C:\\Users\\vshethadmin\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.12\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.12.nupkg.sha512",

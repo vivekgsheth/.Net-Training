@@ -245,3 +245,8 @@ E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\MVC6WebApi.pdb
 E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\Castle.Core.dll
 E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\FluentAssertions.dll
 E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\Moq.dll
+E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\MVC6WebApi.StaticWebAssets.xml
+E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.AzureAD.UI.Views.dll
+E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.AzureAD.UI.dll
+E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\.NET_Training\Day3\MVC6WebApi.Tests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
